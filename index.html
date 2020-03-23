@@ -6,20 +6,43 @@
     <title>Unity WebGL Player | Croppy</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+    
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildWebGL.json", {onProgress: UnityProgress});
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildWebGL.json");
     </script>
+
   </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Croppy</div>
-      </div>
+  
+  <body style="background-image: url('TemplateData/BackgroundTile.png'); background-size: auto; ;">
+    <img src="TemplateData/LogoCroppy.png"/ style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto">
+
+    <div style="text-align: center; width: 100%; margin-left: auto; margin-right: auto">
+      <p>
+      Welcome to croppy.<br/>
+      Welcome to croppy.<br/>
+      Welcome to croppy.<br/>
+      </p>
     </div>
+
+    <div style="display: table; width: 80%; margin-left: auto; margin-right: auto">
+      <img src="TemplateData/IconTwitter.png"/ style="width: 20%; height: auto">
+      <img src="TemplateData/IconTwitter.png"/ style="width: 20%; height: auto">
+      <img src="TemplateData/IconTwitter.png"/ style="width: 20%; height: auto">
+      <img src="TemplateData/IconTwitter.png"/ style="width: 20%; height: auto">
+      <img src="TemplateData/IconTwitter.png"/ style="width: 20%; height: auto">
+    </div>
+
+    <div style="width: 65%; margin-left: auto; margin-right: auto">
+        <div id="unityContainer">
+          <img style="width: 100%; height: auto" src="TemplateData/GameThumb.png"/>
+        </div>
+        <!--<div id="unityContainer" style="width: 1280px; height: 720px; margin: auto"/>-->
+    </div>
+    <p></p>
+    
+    <img src="TemplateData/BackgroundBottom.png"/ style="position: relative; width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; top: -75px">
+
+
   </body>
 </html>
