@@ -10,11 +10,7 @@ https://croppyboygame.github.io/croppy/
     <title>Unity WebGL Player | Croppy</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    
-    <script src="Build/UnityLoader.js"></script>
-    <script>var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BuildWebGL.json");</script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
   </head>
   
   <body style="background-image: url('TemplateData/BackgroundTile.png'); background-size: auto; ;">
@@ -36,11 +32,11 @@ https://croppyboygame.github.io/croppy/
     </div>
 
     <div style="width: 75%; margin-left: auto; margin-right: auto; padding-top: 20px; line-height: 0px">
-        <div id="unityContainer" style="outline: thick solid #A85617">
-          <img style="width: 100%; height: 100%" src="TemplateData/GameThumb.png"/>
-        </div>
-        <!--<div id="unityContainer" style="width: 1280px; height: 720px; margin: auto"/>-->
+      <div id="unityContainer" class="unity-desktop" style="outline: thick solid #A85617">
+        <canvas id="unity-canvas" style="width: 100%; height: 100%; background: url('TemplateData/GameThumb.png')"></canvas>
+      </div>
     </div>
+
     <p></p>
 
     <div style="text-align: center; width: 100%; margin-left: auto; margin-right: auto; padding-top: -400px">
@@ -50,8 +46,8 @@ https://croppyboygame.github.io/croppy/
     </div>
 
     <div style="text-align: center; width: 100%; margin-left: auto; margin-right: auto">
-    	<input type="button" value="Touch Input" onclick="unityInstance.SendMessage('WebInterface', 'Web_ToggleTouchControls');">
-    	<input type="button" value="Touch Input" onclick="unityInstance.SendMessage('WebInterface', 'Web_QueryInfo');">
+      <input type="button" value="Touch Input" onclick="unityInstance.SendMessage('WebInterface', 'Web_ToggleTouchControls');">
+      <input type="button" value="Touch Input" onclick="unityInstance.SendMessage('WebInterface', 'Web_QueryInfo');">
     </div>
 
 <!--
@@ -72,4 +68,33 @@ https://croppyboygame.github.io/croppy/
 
 
   </body>
+
+  <script>
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/BuildWebGL.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/BuildWebGL.data",
+      frameworkUrl: buildUrl + "/BuildWebGL.framework.js",
+      codeUrl: buildUrl + "/BuildWebGL.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "CroppyBoy",
+      productName: "CroppyBoy",
+      productVersion: "1.0b",
+    };
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
+    {
+      config.devicePixelRatio = 1;
+    }
+
+    var canvas = document.getElementById('unity-canvas');
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+  </script>
 </html>
