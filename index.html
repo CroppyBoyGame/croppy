@@ -70,12 +70,38 @@ https://croppyboygame.github.io/croppy/
   </body>
 
   <script>
+
+    // for reference debugging generated constants
+    var str_COMPANY_NAME = "Croppy";
+    var str_PRODUCT_NAME = "Croppy";
+    var str_PRODUCT_VERSION = "0.1";
+    var str_WIDTH = "1280";
+    var str_HEIGHT = "720";
+    var str_SPLASH_SCREEN_STYLE = "Dark";
+    var str_BACKGROUND_COLOR = "#231F20";
+    var str_UNITY_VERSION = "2020.1.0b11";
+    var str_DEVELOPMENT_PLAYER = "false";
+    var str_DECOMPRESSION_FALLBACK = "";
+    var str_TOTAL_MEMORY = "268435456";
+    var str_USE_WASM = "true";
+    var str_USE_THREADS = "false";
+    var str_USE_WEBGL_1_0 = "false";
+    var str_USE_WEBGL_2_0 = "true";
+    var str_USE_DATA_CACHING = "false";
+    var str_LOADER_FILENAME = "Croppy.loader.js";
+    var str_DATA_FILENAME = "Croppy.data";
+    var str_FRAMEWORK_FILENAME = "Croppy.framework.js";
+    var str_CODE_FILENAME = "Croppy.wasm";
+    var str_MEMORY_FILENAME = "";
+    var str_SYMBOLS_FILENAME = "";
+    var str_BACKGROUND_FILENAME = "";
+
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/BuildWebGL.loader.js";
+    var loaderUrl = buildUrl + "/Croppy.loader.js";
     var config = {
-      dataUrl: buildUrl + "/BuildWebGL.data",
-      frameworkUrl: buildUrl + "/BuildWebGL.framework.js",
-      codeUrl: buildUrl + "/BuildWebGL.wasm",
+      dataUrl: buildUrl + "/Croppy.data",
+      frameworkUrl: buildUrl + "/Croppy.framework.js",
+      codeUrl: buildUrl + "/Croppy.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "CroppyBoy",
       productName: "CroppyBoy",
