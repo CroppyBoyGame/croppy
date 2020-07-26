@@ -1,3 +1,7 @@
 <IfModule mod_mime.c>
   AddEncoding gzip .gz
 </Files>
+
+<Files "*.wasm">
+  ForceType application/octet-stream
+</Files>
