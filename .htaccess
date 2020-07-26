@@ -1,0 +1,4 @@
+<Files "*.wasm">
+  AddType application/wasm .wasm
+  AddEncoding gzip wasm
+</Files>
