@@ -3,5 +3,5 @@
 </Files>
 
 <Files "*.wasm">
-  ForceType application/octet-stream
+  ForceType application/wasm
 </Files>
