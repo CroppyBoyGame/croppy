@@ -83,7 +83,7 @@ https://croppyboygame.github.io/croppy/
     var str_BACKGROUND_COLOR = "#231F20";
     var str_UNITY_VERSION = "2020.1.0f1";
     var str_DEVELOPMENT_PLAYER = "false";
-    var str_DECOMPRESSION_FALLBACK = "Brotli";
+    var str_DECOMPRESSION_FALLBACK = "";
     var str_TOTAL_MEMORY = "268435456";
     var str_USE_WASM = "true";
     var str_USE_THREADS = "false";
@@ -91,9 +91,9 @@ https://croppyboygame.github.io/croppy/
     var str_USE_WEBGL_2_0 = "true";
     var str_USE_DATA_CACHING = "false";
     var str_LOADER_FILENAME = "Croppy.loader.js";
-    var str_DATA_FILENAME = "Croppy.data.unityweb";
-    var str_FRAMEWORK_FILENAME = "Croppy.framework.js.unityweb";
-    var str_CODE_FILENAME = "Croppy.wasm.unityweb";
+    var str_DATA_FILENAME = "Croppy.data";
+    var str_FRAMEWORK_FILENAME = "Croppy.framework.js";
+    var str_CODE_FILENAME = "Croppy.wasm";
     var str_MEMORY_FILENAME = "";
     var str_SYMBOLS_FILENAME = "";
     var str_BACKGROUND_FILENAME = "";
@@ -101,9 +101,9 @@ https://croppyboygame.github.io/croppy/
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/Croppy.loader.js";
     var config = {
-      dataUrl: buildUrl + "/Croppy.data.unityweb",
-      frameworkUrl: buildUrl + "/Croppy.framework.js.unityweb",
-      codeUrl: buildUrl + "/Croppy.wasm.unityweb",
+      dataUrl: buildUrl + "/Croppy.data",
+      frameworkUrl: buildUrl + "/Croppy.framework.js",
+      codeUrl: buildUrl + "/Croppy.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "CroppyBoy",
       productName: "CroppyBoy",
