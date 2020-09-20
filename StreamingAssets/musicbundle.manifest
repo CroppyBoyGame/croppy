@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 399180636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7b2c82216ea9c50ff070554469bb31a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Audio/Music/PeriTune_Positive_4.mp3
+- Assets/Audio/Music/PeriTune_Breeze.mp3
+- Assets/Audio/Music/PeriTune_Breeze_2.mp3
+- Assets/Audio/Music/PeriTune_Laid_Back.mp3
+- Assets/Audio/Music/PeriTune_Guitar_Melancholy_2.mp3
+- Assets/Audio/Music/PeriTune_Nostalgic_2.mp3
+- Assets/Audio/Music/PeriTune_Guitar_Melancholy.mp3
+- Assets/Audio/Music/PeriTune_Harvest_2.mp3
+- Assets/Audio/Music/PeriTune_Harvest.mp3
+- Assets/Audio/Music/PeriTune_Nostalgic.mp3
+- Assets/Audio/Music/PeriTune_Pastorale.mp3
+- Assets/Audio/Music/PeriTune_Deep_Woods.mp3
+- Assets/Audio/Music/PeriTune_Positive_2.mp3
+- Assets/Audio/Music/PeriTune_Tavern.mp3
+- Assets/Audio/Music/PeriTune_Deep_Woods_2.mp3
+- Assets/Audio/Music/PeriTune_Harvest_3.mp3
+- Assets/Audio/Music/PeriTune_Positive.mp3
+- Assets/Audio/Music/PeriTune_Soft_Day_2.mp3
+Dependencies: []
